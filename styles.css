@@ -1,0 +1,219 @@
+body {
+    background-color: #145369;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header {
+    padding: 20px;
+    background-color: transparent;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.about) {
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.photo img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.page,
+.page2 {
+    background-color: transparent;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #04AA6D;
+    border: none;
+    color: transparent;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: transparent;
+    color: black;
+    border: 2px solid #008CBA;
+}
+
+.button1:hover {
+    background-color: #008CBA;
+    color: wheat;
+}
+
+.button2 {
+    background-color: transparent;
+    color: black;
+    border: 2px solid #008CBA;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.box {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #340a0e;
+    padding: 50px;
+    margin: 50px auto;
+    box-shadow: -10px 10px 100px 0px rgba(0, 0, 0, 0.2), -20px 1px 20px 5px rgba(0, 0, 0, 0.19);
+}
+.coming,
+.soon {
+    font-size: 50px;
+    text-align: center;
+}
+
+.contact-info,
+.contact-form {
+    background-color: transparent;
+    width: 45%;
+    border: 1px solid #134b5f;
+    padding: 10px;
+    margin: 0 450px;
+    box-shadow: -10px 10px 100px 0px rgba(0, 0, 0, 0.2), -20px 1px 20px 5px rgba(0, 0, 0, 0.19);
+    transition: width 0.4s ease-in-out;
+}
+
+.video{
+    width:"300"; 
+    height:"190";
+}
+
+.contact-info,
+.contact-form {
+    width: 90%;
+}
+
+.contact-info {
+    width: 100%;
+}
+
+.about {
+    padding-left: 10px;
+    font-size: 30px;
+    border-left: 10px solid blue;
+}
+
+.head {
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 20px;
+    border-left: 10px solid red;
+}
+
+form {
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 60%;
+    border: transparent;
+    border-bottom: 5px solid rgba(83, 13, 223, 0.903);
+    border-radius: 9px;
+    background-repeat: no-repeat;
+    padding: 8px 1px 7px 0px;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus,
+input[type="email"]:focus {
+    width: 100%;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 50px 5px 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    display: block;
+    margin: 20px auto;
+}
+
+@media screen and (max-width: 600px) {
+    .photo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .page,
+    .page2 {
+        padding: 10px;
+    }
+
+    .box {
+        width: 80%;
+        height: auto;
+        padding: 20px;
+        margin: 20px auto;
+        box-shadow: -10px 10px 100px 0px rgba(0, 0, 0, 0.2), -20px 1px 20px 5px rgba(0, 0, 0, 0.19);
+    }
+
+
+    .coming,
+    .soon {
+        font-size: 30px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 94%;
+        margin: 20px 0;
+    }
+}
